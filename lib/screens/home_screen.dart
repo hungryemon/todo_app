@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:todo_app/main.dart';
 import 'package:todo_app/controllers/todo_controller.dart';
+import 'package:todo_app/screens/edit_todo_screen.dart';
 import 'package:todo_app/screens/todo_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -64,6 +65,10 @@ class HomeScreen extends StatelessWidget {
                   todo.isDone = neWvalue!;
                   todoController.todos[index] = todo;
                 },
+              ),
+              trailing: IconButton(
+                onPressed: () => Get.to(() => TodoEdit(index: index)),
+                icon: const Icon(Icons.edit),
               ),
             ),
           ),

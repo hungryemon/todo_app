@@ -55,6 +55,8 @@ Future<void> main() async {
     checkbox = tester.firstWidget(checkboxFinder) as Checkbox;
     expect(checkbox.value, true);
 
+  
+
     //final titleFinder = tester.widget<Text>(find.text(title));
     //expect(titleFinder.style,TextDecoration.lineThrough);
     await tester.pumpAndSettle();
