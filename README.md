@@ -16,12 +16,4 @@ flutter test integration_test/validate_check_feature.dart
 ```
 flutter test integration_test/validate_uncheck_feature.dart
 ```
-### 4. Test Case 04-Verify clicking check on task add the task in completed task list. 
-```
-
-```
-### 5. Test Case 05-Verify clicking uncheck on task remove the task in completed task list. 
-```
-
-```
 
